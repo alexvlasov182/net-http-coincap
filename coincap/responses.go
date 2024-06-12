@@ -3,7 +3,7 @@ package coincap
 import "fmt"
 
 type assetsResponse struct {
-	Asset     []Asset `json:"data"`
+	Assets    []Asset `json:"data"`
 	Timestamp int64   `json:"timestamp"`
 }
 
