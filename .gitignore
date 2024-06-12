@@ -1,0 +1,38 @@
+.DS_Store
+.idea
+
+# Binaries for programs and plugins
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+
+# Output of the go coverage tool
+*.out
+
+# Temporary files
+*.tmp
+
+# IDEs and editors
+.vscode/
+.idea/
+*.swp
+*~
+
+# Dependency directories
+/vendor/
+
+# Go module files
+/go.sum
+
+# Logs
+*.log
+
+# Test binary, can be created by 'go test'
+*.test
+
+# Go build and test outputs
+*.o
+*.a
+*.test
