@@ -13,10 +13,19 @@ func main() {
 		log.Fatal(err)
 	}
 
-	bitcoin, err := coincapClient.GetAsset("bitcoin")
+	assets, err := coincapClient.GetAssets()
 	if err != nil {
 		log.Fatal(err)
 	}
 
-	fmt.Println(bitcoin.Info())
+	for _, asset := range assets {
+		fmt.Println(asset.Info())
+	}
+
+	// bitcoin, err := coincapClient.GetAsset("bitcoin")
+	// if err != nil {
+	// 	log.Fatal(err)
+	// }
+
+	// fmt.Println(bitcoin.Info())
 }
